@@ -1,6 +1,9 @@
 # todo_list
 todo_list based on Golang,mainly uses grpc,gin,mysql,etcd...
 
+分为api-gateway和user模块
+gin实现api-gateway的router，etcd做服务发现，grpc实现api-gateway和user层的通信调用，user层做handler和dao逻辑，mysql做持久化使用gorm操作，其他的（jwt/cors等）放api-gateway
+
 ## 目录
 
 ```
