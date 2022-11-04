@@ -42,3 +42,20 @@ user/
     ├── res               // 统一response接口返回
     └── util              // 各种工具、JWT、Logger等等..
 ```
+
+## 启动顺序
+
+```bash
+cd X:\Program Files (x86)\mysql-8.0.31-winx64\bin>
+net start mysql
+
+cd X:\Program Files (x86)\etcd-v3.4.22-windows-amd64
+etcd.exe
+
+// 进入工作目录
+cd /user/cmd
+go run main.go
+
+cd /api-gateway/cmd
+go run main.go
+```
