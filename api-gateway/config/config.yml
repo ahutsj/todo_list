@@ -1,0 +1,5 @@
+server:
+  domain: api-gateway
+  port: 3000
+  jwtSecret: ahutsj
+  version: 1.0
